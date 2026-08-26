@@ -1,0 +1,5 @@
+[toolchain]
+# Pinned to nightly for `std::simd` (portable_simd), used later by
+# `core::matrix::matvec_simd`. Everything else in this workspace is plain std.
+channel = "nightly"
+components = ["rustfmt", "clippy"]

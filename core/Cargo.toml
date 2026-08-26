@@ -1,0 +1,12 @@
+[package]
+name = "svd-core"
+version.workspace = true
+edition.workspace = true
+
+# The file layout is flat (core/matrix.rs rather than core/src/matrix.rs) to
+# match the project's intended tree, so the lib path is set explicitly.
+[lib]
+name = "svd_core"
+path = "lib.rs"
+
+[dependencies]
